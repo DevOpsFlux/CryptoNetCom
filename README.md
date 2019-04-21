@@ -11,9 +11,9 @@ SEED ECB/CBC MODE Encrypt/Decrypt Component
 | CryptoNetCom | SEED Encrypt/Decrypt 1.0	| .NET 3.5	| CryptoNetCom 1.0.0.0 |
 
 ## 프로젝트 정보 및 버젼
-- SEED 암/복호화 모듈 ECB/CBC MODE
-> CryptoNetCom.dll 1.0.0.0
-> System.EnterpriseServices
+* SEED 암/복호화 모듈 ECB/CBC MODE
+** CryptoNetCom.dll 1.0.0.0
+** System.EnterpriseServices
 
 # CryptoNetCom 사용 방법
 * 구성요소서비스 > COM+ 응용프로그램 > CryptoNetCom.dll 컴포넌트 등록
