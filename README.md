@@ -35,7 +35,7 @@ public bool SeedCBCPADEncrypt(string strKey, string strIV, string strText, out s
 public bool SeedCBCPADDecrypt(string strKey, string strIV, string strEnc, out string outVal, out string outErrMsg)
 ```
 
-## 6. Unit Test Sample
+## 5. Unit Test Sample
 ```
 Option Explicit 
 
