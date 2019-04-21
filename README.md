@@ -15,10 +15,13 @@ SEED ECB/CBC MODE Encrypt/Decrypt Component
 > CryptoNetCom.dll 1.0.0.0
 > System.EnterpriseServices
 
-# 프로그램 환경 설정
-* CryptoNetCom.dll 컴포넌트 등록
+# CryptoNetCom 사용 방법
+* 구성요소서비스 > COM+ 응용프로그램 > CryptoNetCom.dll 컴포넌트 등록
 
-* CryptLib Class :
+## CryptoNetCom Class Description
+- /Doc/CryptoNetCom모듈.xls
+
+* CryptoNetCom CryptLib Class :
 ```
 public bool SeedEncrypt(string strKey, string strText, out string outVal, out string outErrMsg)
 public bool SeedDecrypt(string strKey, string strEnc, out string outVal, out string outErrMsg)
@@ -32,11 +35,7 @@ public bool SeedCBCPADEncrypt(string strKey, string strIV, string strText, out s
 public bool SeedCBCPADDecrypt(string strKey, string strIV, string strEnc, out string outVal, out string outErrMsg)
 ```
 
-## 프로젝트 설정 및 사용 메뉴얼
-
-- /Doc/CryptoNetCom모듈.xls
-
-## 프로그램 사용 샘플
+## Unit Test Sample
 ```
 Option Explicit 
 
