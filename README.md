@@ -6,7 +6,7 @@ SEED ECB/CBC MODE Encrypt/Decrypt Component
 ### *[ CryptoNetCom Solution ]	
 ### *[ CryptoNetCom.csproj ]	
 
-| 프로젝트 | 설명 | .NET버젼 | AdoToFormats버젼 |
+| 프로젝트 | 설명 | .NET버젼 | CryptoNetCom버젼 |
 | -------- | -------- | -------- | -------- |
 | CryptoNetCom | SEED Encrypt/Decrypt 1.0	| .NET 3.5	| CryptoNetCom 1.0.0.0 |
 
