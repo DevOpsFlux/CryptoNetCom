@@ -38,13 +38,37 @@ public bool SeedCBCPADDecrypt(string strKey, string strIV, string strEnc, out st
 
 ## 프로그램 사용 샘플
 ```
-KEY = "DevOpsFlux1580!@"
-IV = "2019GoodLuck1234"
-strText = "Test0987SeedCBCTest"
+Option Explicit 
 
-Set objCom = CreateObject("CryptoNetCom.CryptLib")
-retVal = objCom.SeedCBCPADEncrypt(KEY, IV, strText, outVal, ErrMsg)
-strEnc = outVal
+Call SeedCBCTest()
 
-retVal = objCom.SeedCBCPADDecrypt(KEY, IV, strEnc, outVal, ErrMsg)
+Sub SeedCBCTest()
+
+	Dim objCom, retVal
+	Dim SEEDKEY, SEEDIV, strText, strEnc, strDec
+	Dim outVal, ErrMsg
+	Dim strMsgBox
+	
+
+	SEEDKEY = "DevOpsFlux1580!@"
+	SEEDIV = "2019GoodLuck1234"
+	strText = "Test0987SeedCBCTest"
+
+	strMsgBox = "strText : " & strText & vbCrLf
+
+	Set objCom = CreateObject("CryptoNetCom.CryptLib")
+	retVal = objCom.SeedCBCPADEncrypt(SEEDKEY, SEEDIV, strText, outVal, ErrMsg)
+	strEnc = outVal
+	'strMsgBox = strMsgBox & "seedEncrypt : " & strEnc & " ____ " & ErrMsg  & vbCrLf
+	strMsgBox = strMsgBox & "seedEncrypt : " & strEnc & vbCrLf
+
+	retVal = objCom.SeedCBCPADDecrypt(SEEDKEY, SEEDIV, strEnc, outVal, ErrMsg)
+	strDec = outVal
+	strMsgBox = strMsgBox & "SeedDecrypt : " & strDec & vbCrLf
+	msgBox strMsgBox
+	
+	Set objCom = Nothing 
+	
+End Sub
+
 ```
