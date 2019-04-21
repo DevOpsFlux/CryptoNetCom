@@ -12,9 +12,7 @@ SEED ECB/CBC MODE Encrypt/Decrypt Component
 
 ## 프로젝트 정보 및 버젼
 - SEED 암/복호화 모듈 ECB/CBC MODE
-
-- CryptoNetCom.dll 1.0.0.0
-> .Net Framework 3.5 
+> CryptoNetCom.dll 1.0.0.0
 > System.EnterpriseServices
 
 # 프로그램 환경 설정
