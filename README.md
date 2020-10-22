@@ -21,7 +21,7 @@ SEED ECB/CBC MODE Encrypt/Decrypt Component
 ## 4. CryptoNetCom Class Description
 - /Doc/CryptoNetCom모듈.xls
 
-* 5. CryptoNetCom CryptLib Class :
+- CryptoNetCom CryptLib Class :
 ```
 public bool SeedEncrypt(string strKey, string strText, out string outVal, out string outErrMsg)
 public bool SeedDecrypt(string strKey, string strEnc, out string outVal, out string outErrMsg)
