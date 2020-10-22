@@ -73,3 +73,16 @@ End Sub
 ```
 
 ![CryptoEncDec IMG](https://user-images.githubusercontent.com/49525161/56465899-3ff33280-6443-11e9-9f24-2bd25840c2c3.JPG)
+
+
+## ISSUE : Global Language 
+- CryptSeed.cs > line : 1307 / 1312
+```
+	다국어 UTF-8 변경 필요 시 
+	//byte[] bValue = Encoding.Default.GetBytes(sValue);
+	byte[] bValue = Encoding.UTF8.GetBytes(sValue);
+
+	//sReturn = Encoding.Default.GetString(dec);
+	sReturn = Encoding.UTF8.GetString(dec);
+```
+![UTF-8EncDec IMG](./Doc/img/img01.JPG)
