@@ -6,7 +6,7 @@ SEED ECB/CBC MODE Encrypt/Decrypt Component
 ### *[ CryptoNetCom Solution ]	
 ### *[ CryptoNetCom.csproj ]	
 
-| 프로젝트 | 설명 | .NET버젼 | AdoToFormats버젼 |
+| 프로젝트 | 설명 | .NET버젼 | CryptoNetCom버젼 |
 | -------- | -------- | -------- | -------- |
 | CryptoNetCom | SEED Encrypt/Decrypt 1.0	| .NET 3.5	| CryptoNetCom 1.0.0.0 |
 
@@ -73,7 +73,6 @@ End Sub
 ```
 
 ![CryptoEncDec IMG](https://user-images.githubusercontent.com/49525161/56465899-3ff33280-6443-11e9-9f24-2bd25840c2c3.JPG)
-
 
 ## ISSUE : Global Language 
 - CryptSeed.cs > line : 1307 / 1312
