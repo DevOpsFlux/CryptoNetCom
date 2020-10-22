@@ -81,7 +81,7 @@ End Sub
 	strText = "私は金亨鎮です。ありがとうございます。メール"
 	암/복화 후 =>  私は金亨?です。ありがとうございます。メ?ル
 
-	다국어 UTF-8 변경 필요 시 
+	해결 : 다국어 UTF-8 변경 필요 시 
 	//byte[] bValue = Encoding.Default.GetBytes(sValue);
 	byte[] bValue = Encoding.UTF8.GetBytes(sValue);
 
