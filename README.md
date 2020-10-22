@@ -77,6 +77,10 @@ End Sub
 ## ISSUE : Global Language 
 - CryptSeed.cs > line : 1307 / 1312
 ```
+	issue : 중국어,일본어 같이 약어 한자 사용시 ? 인코딩 깨짐 현상 발생
+	strText = "私は金亨鎮です。ありがとうございます。メール"
+	암/복화 후 =>  私は金亨?です。ありがとうございます。メ?ル
+
 	다국어 UTF-8 변경 필요 시 
 	//byte[] bValue = Encoding.Default.GetBytes(sValue);
 	byte[] bValue = Encoding.UTF8.GetBytes(sValue);
